@@ -21,7 +21,7 @@ const files = ["https://raw.githubusercontent.com/no-stack-dub-sack/testable-pro
 Promise.all(files.map((url) => d3.json(url))).then(function(data) {
 
   let domain = [10, 20, 30, 40, 50, 60];
-  color = d3.scaleThreshold()
+  let color = d3.scaleThreshold()
     .domain(domain)
     .range(d3.schemeBlues[6]);
 
